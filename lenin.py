@@ -23,8 +23,8 @@ def animate(iteration):
     print(iteration)
 
     for i in range(0,n):
-        x[i] = (x[(i-1+n)%n]+x[(i+1)%n])/2. + 0.*cx[i] # play with the coeff here, 0. by default
-        y[i] = (y[(i-1+n)%n]+y[(i+1)%n])/2. + 0.*cy[i]
+        x[i] = (x[(i-1)%n]+x[(i+1)%n])/2. + 0.*cx[i] # play with the coeff here, 0. by default
+        y[i] = (y[(i-1)%n]+y[(i+1)%n])/2. + 0.*cy[i]
 
     lines[0].set_data(x, y)  # update the data.
     lines[1].set_text("Iteration #" + str(iteration))

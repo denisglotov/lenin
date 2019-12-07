@@ -7,4 +7,4 @@ PIPENV_VENV_IN_PROJECT=1 pipenv install --dev
 pipenv run python lenin.py
 ```
 
-![line.gif]
+![Result](./line.gif)
